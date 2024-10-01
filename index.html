@@ -1,8 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            test
-        </title>
-    </head>
+<html lang="ja">
+<!--  -->
+
+<head>
+  <!-- SEOにこれ入れたらいいといわれたやつ -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>taka-homepage</title>
+  <meta content="技術の授業用に作成したホームページです" name="description" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+  <!-- jquery使ってます -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+  <!-- トップメニュー -->
+  <nav id="topmenu">
+    <ul id="topmenu_ul">
+      <li class="topmenu_buttons"><a href="./">HOME</a></li>
+      <li class="topmenu_buttons"><a href="/pages/created_page/">作成したページ</a></li>
+      <li class="topmenu_buttons"><a href="/pages/school_info/">学校情報</a></li>
+      <li class="topmenu_buttons"><a href="/pages/yorozu/">よろず</a></li>
+      <li class="topmenu_buttons"><a href="/pages/history/">更新履歴</a></li>
+    </ul>
+  </nav>
+
+  <!-- スライドショー -->
+  <ul class="slideshow-fade">
+    <li><img src="/img/snow.jpg" alt="スライドショー画像1"></li>
+    <li><img src="/img/plant.jpg" alt="スライドショー画像2"></li>
+    <li><img src="/img/chemical.jpg" alt="スライドショー画像3"></li>
+    <li><img src="/img/carnivorouspants.jpg" alt="スライドショー画像4"></li>
+    <li><img src="/img/programming.jpg" alt="スライドショー画像5"></li>
+    <li><img src="/img/hotspring.jpg" alt="スライドショー画像6"></li>
+  </ul>
+
+  <h1 id="welcome">Welcome to TAKA's homepage!</h1>
+
+</body>
+
 </html>

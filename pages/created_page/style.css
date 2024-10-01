@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "SF_Pro";
+    src:
+        url(".\font\SF-Pro.ttf") format("otf")
+}
+
+body {
+    background-color: black;
+    font-family: "SF_Pro";
+    color: white;
+}
+
+#topmenu {
+    width: 100%;
+    height: 50px;
+    background-color: #303030;
+    top: 100px;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+#topmenu_ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 10px;
+}
+
+.topmenu_buttons {
+    list-style: none;
+}
+
+#topmenu_ul li a {
+    text-align: center;
+    font-size:100%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+}
+
+p {
+    font-size: 300%;
+}
