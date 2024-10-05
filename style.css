@@ -4,6 +4,10 @@
         url(".\font\SF-Pro.ttf") format("otf")
 }
 
+html {
+    height: 10000px;
+}
+
 body {
     background-color: black;
     font-family: "SF_Pro";
@@ -13,12 +17,15 @@ body {
 }
 
 #topmenu {
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 50px;
     background-color: #303030;
     padding-top: 7px;
     box-sizing: border-box;
     text-align: left;
+    z-index: 10;
 }
 
 #topmenu_ul {
@@ -52,8 +59,9 @@ body {
     z-index: 0;
 
     width: 100%;
-    height: 300px;
-    opacity: 0.7;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
 
     li {
         list-style: none;
@@ -61,50 +69,122 @@ body {
         height: 100%;
 
         img {
+
             position: absolute;
             left: 0;
             top: 0;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
 
 #welcome {
     position: absolute;
-    left: 50%;
-    top: 160px;
-    transform: translateX(-50%);
+    left: 40%;
+    top: 30%;
+    transform: translateX(-90%);
     z-index: 1;
     text-align: center;
+    font-size: 300%;
 }
 
-#description{
-    margin-top: 100px;
-    position: relative;
-    top:400px;
+#description {
+    position: absolute;
     text-align: center;
+    top: 50%;
+    left: 41%;
+    transform: translateX(-90%);
 }
 
-
-#description_top{
-    background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
-    background-image: url(./img/text_background.jpg);
-    background-position: top;
-    background-size: 100% 90%;
-    font-size: 330%;
-}
-
-.big_left{
-    position: relative;
+#self_introducion_title {
+    position: absolute;
     text-align: left;
-    left:30%;
-    transform: translateX(-100px);
-    font-size: 250%;
+    top: 105%;
+    left: 100px;
+    font-size: 270%;
 }
 
-#self_introduction{
-    margin-top: 600px;
-    position: relative;
+
+
+#self_introduction {
+    width: 100vw;
+    top: 120%;
+    left: 50vw;
+    position: absolute;
     text-align: center;
+    transform: translateX(-50%);
+
+
+    .self_introduction_flexbox {
+        display: flex;
+        margin-bottom: 8vh;
+    }
+
+    .self_introduction_contents {
+        margin: auto;
+        text-align: center;
+        height: 50vh;
+        width: 46vw;
+    }
+
+    .self_introduction_img {
+        position: absolute;
+        text-align: center;
+        width: 46vw;
+        height: 50vh;
+        object-fit: cover;
+        opacity: 0.5;
+        border-radius: 20px;
+        transform: translateX(-50%);
+    }
+
+    .self_introduction_description_title {
+        position: absolute;
+        top: 2vh;
+        left: 5vw;
+        font-size: 200%;
+    }
+
+    .self_introduction_description_main {
+        top: 10vh;
+        position: absolute;
+        text-align: left;
+    }
+
+    #self_introduction_plant,
+    #self_introduction_onsen {
+        transform: translateY(50%);
+    }
+
+    #self_introduction_programming h2,
+    #self_introduction_programming h3 {
+        left: 5vw;
+    }
+
+    #self_introduction_plant h2,
+    #self_introduction_plant h3 {
+        left: 3vw;
+    }
+
+    #self_introduction_3dpuzzle h2 {
+        top: 60vh;
+        left: 5vw;
+    }
+
+    #self_introduction_3dpuzzle h3 {
+        top: 68vh;
+        left: 5vw;
+    }
+
+    #self_introduction_onsen h2 {
+        top: 2vh;
+        left: 3vw;
+    }
+
+    #self_introduction_onsen h3 {
+        top: 10vh;
+        left: 3vw;
+    }
 }

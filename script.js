@@ -11,3 +11,10 @@ $(function () {
         $next.fadeIn(1000).addClass("fade");
     }, 8000);
 });
+
+$(function () {
+    $(window).on('load scroll', function () {
+        var scrollPos = $(this).scrollTop();
+        $(".slideshow-fade").css({ "top": String(32 - scrollPos / 5) + "px" });
+    });
+});	
