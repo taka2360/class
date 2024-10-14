@@ -101,16 +101,16 @@ body {
 #self_introducion_title {
     position: absolute;
     text-align: left;
-    top: 105%;
-    left: 100px;
-    font-size: 270%;
+    top: 115vh;
+    left: 7vw;
+    font-size: 330%;
 }
 
 
 
 #self_introduction {
     width: 100vw;
-    top: 120%;
+    top: 140vh;
     left: 50vw;
     position: absolute;
     text-align: center;
@@ -155,7 +155,7 @@ body {
 
     #self_introduction_plant,
     #self_introduction_onsen {
-        transform: translateY(50%);
+        transform: translateY(-50%);
     }
 
     #self_introduction_programming h2,
@@ -186,5 +186,58 @@ body {
     #self_introduction_onsen h3 {
         top: 10vh;
         left: 3vw;
+    }
+
+    #self_introduction_book h2 {
+        top: 92vh;
+        left: 55vw;
+    }
+
+    #self_introduction_book h3 {
+        top: 100vh;
+        left: 55vw;
+    }
+
+    #self_introduction_book img{
+        left:75vw;
+        top:90vh
+    }
+}
+
+#background{
+    position:absolute;
+    left:50vw;
+    top:300vh;
+    transform: translateX(-50%);
+    width:100vw;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+#impressions{
+    position: absolute;
+    left:50vw;
+    transform: translateX(-50%);
+    top:330vh;
+    width:60vw;
+    height:150vh;
+    text-align: center;
+    background-color: #ffffff;
+    
+
+    h2{
+        font-size: 200%;
+        color:#000000;
+    }
+
+    h2:first-of-type {
+        margin-top:10vh;
+    }
+    h2:last-of-type{
+        margin-top:23vh;
+    }
+    h3 {
+        width:100%;
+        margin-top: 3vh;
     }
 }
