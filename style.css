@@ -16,7 +16,32 @@ body {
     padding: 0;
 }
 
+.fadeUp {
+    animation-name: fadeUpMotion;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpMotion {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 #topmenu {
+    animation-name: topmenuMotion;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
     position: fixed;
     top: 0px;
     width: 100%;
@@ -26,6 +51,16 @@ body {
     box-sizing: border-box;
     text-align: left;
     z-index: 10;
+}
+
+@keyframes topmenuMotion {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 #topmenu_ul {
@@ -60,7 +95,7 @@ body {
 
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     object-fit: cover;
 
     li {
@@ -90,7 +125,53 @@ body {
     font-size: 300%;
 }
 
-#description {
+.mask-bg {
+    color: rgba(0, 0, 0, 0.0);
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    transition: color 0ms 450ms;
+}
+
+.mask-bg::after {
+    background: linear-gradient(to right, #362ae0 0%, #3b79cc 50%, #42d3ed 100%);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, 100%);
+}
+
+.mask-bg.is-animated {
+    color: white;
+}
+
+.mask-bg.is-animated::after {
+    animation: mask-bg 1.2s cubic-bezier(0.8, 0, 0.170, 1);
+}
+
+@keyframes mask-bg {
+    0% {
+        transform: translate(0, 101%)
+    }
+
+    40%,
+    60% {
+        transform: translate(0, 0%)
+    }
+
+    100% {
+        transform: translate(0, -100%)
+    }
+}
+
+
+.description {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -98,14 +179,53 @@ body {
     transform: translateX(-90%);
 }
 
+
+.description h3 {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.delay-time0 {
+    animation-delay: 0.0s;
+}
+
+.delay-time1 {
+    animation-delay: 0.1s;
+}
+
+.delay-time2 {
+    animation-delay: 0.2s;
+}
+
+.delay-time3 {
+    animation-delay: 0.3s;
+}
+
+.delay-time4 {
+    animation-delay: 0.4s;
+}
+
+
 #self_introducion_title {
     position: absolute;
     text-align: left;
     top: 115vh;
     left: 7vw;
     font-size: 330%;
+    opacity: 0;
 }
-
 
 
 #self_introduction {
@@ -127,6 +247,7 @@ body {
         text-align: center;
         height: 50vh;
         width: 46vw;
+        opacity: 0;
     }
 
     .self_introduction_img {
@@ -198,46 +319,85 @@ body {
         left: 55vw;
     }
 
-    #self_introduction_book img{
-        left:75vw;
-        top:90vh
+    #self_introduction_book img {
+        left: 75vw;
+        top: 90vh
     }
 }
 
-#background{
-    position:absolute;
-    left:50vw;
-    top:300vh;
+#backgrounds {
+    position: absolute;
+    left: 50vw;
+    top: 300vh;
     transform: translateX(-50%);
-    width:100vw;
-    opacity: 0.6;
+    width: 100vw;
+    height:100vh;
+    opacity: 0;
     object-fit: cover;
+
+    img {
+        opacity: 0.4;
+        width: 100vw;
+        height:100vh;
+        object-fit: cover;
+    }
 }
 
-#impressions{
+#impressions {
     position: absolute;
-    left:50vw;
+    left: 50vw;
     transform: translateX(-50%);
-    top:330vh;
-    width:60vw;
-    height:150vh;
+    top: 330vh;
+    width: 50vw;
+    height: 0vh;
     text-align: center;
     background-color: #ffffff;
-    
 
-    h2{
+
+    h2 {
         font-size: 200%;
-        color:#000000;
+        color: #000000;
+        opacity: 0;
     }
 
     h2:first-of-type {
-        margin-top:10vh;
+        margin-top: 10vh;
     }
-    h2:last-of-type{
-        margin-top:23vh;
+
+    h2:last-of-type {
+        margin-top: 28vh;
     }
+
     h3 {
-        width:100%;
-        margin-top: 3vh;
+        margin: auto;
+        margin-top: 10vh;
+        width: 70%;
+        color: black;
+        opacity: 0;
+    }
+}
+
+.fadein{
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: forwards;
+}
+
+
+.extend{
+    animation-name: Extend;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes  Extend{
+    0% {
+        height: 0vh;
+    }
+
+    100% {
+        height: 130vh;
     }
 }

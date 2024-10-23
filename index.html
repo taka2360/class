@@ -5,7 +5,7 @@
 <head>
   <!-- SEOにこれ入れたらいいといわれたやつ -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <meta charset="utf-8">
   <title>taka-homepage</title>
   <meta content="技術の授業用に作成したホームページです" name="description" />
 
@@ -20,11 +20,11 @@
   <!-- トップメニュー -->
   <nav id="topmenu">
     <ul id="topmenu_ul">
-      <li class="topmenu_buttons"><a href="./">HOME</a></li>
-      <li class="topmenu_buttons"><a href="./pages/created_page/">作成したページ</a></li>
-      <li class="topmenu_buttons"><a href="./pages/school_info/">学校情報</a></li>
-      <li class="topmenu_buttons"><a href="./pages/yorozu/">よろず</a></li>
-      <li class="topmenu_buttons"><a href="./pages/history/">更新履歴</a></li>
+      <li class="topmenu_buttons delay-time0 fadeUp"><a href="./">HOME</a></li>
+      <li class="topmenu_buttons delay-time1 fadeUp"><a href="./pages/created_page/">作成したページ</a></li>
+      <li class="topmenu_buttons delay-time2 fadeUp"><a href="./pages/school_info/">学校情報</a></li>
+      <li class="topmenu_buttons delay-time3 fadeUp"><a href="./pages/yorozu/">よろず</a></li>
+      <li class="topmenu_buttons delay-time4 fadeUp"><a href="./pages/history/">更新履歴</a></li>
     </ul>
   </nav>
 
@@ -38,11 +38,12 @@
     <li><img src="./img/hotspring.jpg" alt="スライドショー画像6"></li>
   </ul>
 
-  <h1 id="welcome">Welcome to TAKA's <br> homepage!</h1>
-  <div id="description">
-    <h3>これは技術の授業で使うために作ったホームページです。<br></h3>
-    <h3>2年の時に作ったやつのリメイク版でもあります...<br></h3>
-    <h3>また、自分はデザインのことは何も知らないので、あしからず。<br></h3>
+  <h1 id="welcome" class="mask-bg anim">Welcome to TAKA's <br> homepage!</h1>
+  
+  <div class="description">
+    <h3 class="delay-time0">これは技術の授業で使うために作ったホームページです。<br></h3>
+    <h3 class="delay-time1">2年の時に作ったやつのリメイク版でもあります...<br></h3>
+    <h3 class="delay-time2">また、自分はデザインのことは何も知らないので、あしからず。<br></h3>
   </div>
 
   <h2 id="self_introducion_title">自己紹介</h2>
@@ -86,7 +87,8 @@
     </div>
   </div>
 
-  <img id="background" src="img\hot_air_balloons.jpg">
+  <div id="backgrounds"><img src="img\aurora.jpg"><img src="img\programming.jpg"></div>
+  
   <div id="impressions">
     <h2>感想</h2>
     <h3>久しぶりにhtml,cssを触ったけど、やりたいことが割とさっとできて楽しかったです。<br>特にホーム画面の一番上のスライドショーがかなり気に入ってます。また、自分はデザインには全く通じていないので、<br>とにかく自分の「こうしたらいい感じになりそう」を実現していった感じです。結果的には自分で満足のいくホームページができてよかったです。</h3>

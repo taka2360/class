@@ -8,6 +8,8 @@ body {
     background-color: black;
     font-family: "SF_Pro";
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 #topmenu {
