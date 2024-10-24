@@ -4,9 +4,16 @@ let window_height, window_width = 0
 function catchWindowSize() {
     window_height = window.innerHeight;
     window_width = window.innerWidth;
+
+    if (window_height * window_width < 1000000){
+        $("body").css({ "font-size": "70%"});
+    }else{
+        $("body").css({ "font-size": "100%"});
+    }
 }
 window.onresize = catchWindowSize;
 catchWindowSize();
+
 
 //スライドショー
 $(function () {
@@ -36,7 +43,7 @@ var anim = function () {
 }
 anim();
 
-//
+//スクロールに合わせたアニメーション
 $(function () {
     $(window).on('load scroll', function () {
         var scrollPos = $(this).scrollTop();

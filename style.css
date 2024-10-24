@@ -1,6 +1,8 @@
 
 html {
     height: 10000px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .fadeUp {
@@ -39,7 +42,7 @@ body {
 
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: #303030;
     padding-top: 7px;
@@ -88,14 +91,14 @@ body {
     transform: translateX(-50%);
     z-index: 0;
 
-    width: 100%;
+    width: 95vw;
     height: 100%;
     opacity: 0.8;
     object-fit: cover;
 
     li {
         list-style: none;
-        width: 100%;
+        width: 100vw;
         height: 100%;
 
         img {
@@ -103,7 +106,7 @@ body {
             position: absolute;
             left: 0;
             top: 0;
-            width: 100%;
+            width: 100vw;
             height: 100%;
             object-fit: cover;
         }
@@ -267,6 +270,7 @@ body {
         top: 10vh;
         position: absolute;
         text-align: left;
+        width:40vw;
     }
 
     #self_introduction_plant,
