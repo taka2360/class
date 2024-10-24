@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "SF_Pro";
-    src:
-        url(".\font\SF-Pro.ttf") format("otf")
-}
 
 html {
     height: 10000px;
@@ -10,7 +5,7 @@ html {
 
 body {
     background-color: black;
-    font-family: "SF_Pro";
+    font-family: "Meiryo", "San Francisco",system-ui;
     color: white;
     margin: 0;
     padding: 0;
