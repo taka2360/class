@@ -185,35 +185,7 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-.delay-time0 {
-    animation-delay: 0.0s;
-}
-
-.delay-time1 {
-    animation-delay: 0.1s;
-}
-
-.delay-time2 {
-    animation-delay: 0.2s;
-}
-
-.delay-time3 {
-    animation-delay: 0.3s;
-}
-
-.delay-time4 {
-    animation-delay: 0.4s;
-}
 
 
 #self_introducion_title {
@@ -376,6 +348,21 @@ body {
     }
 }
 
+
+#links{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 530vh;
+
+    a{
+        text-decoration: none;
+        font-size:medium;
+        font-weight: bold;
+        margin: 0 3vw;
+    }
+}
+
 .fadein{
     animation-name: fadeIn;
     animation-duration: 0.7s;
@@ -399,4 +386,34 @@ body {
     100% {
         height: 130vh;
     }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.delay-time0 {
+    animation-delay: 0.0s;
+}
+
+.delay-time1 {
+    animation-delay: 0.1s;
+}
+
+.delay-time2 {
+    animation-delay: 0.2s;
+}
+
+.delay-time3 {
+    animation-delay: 0.3s;
+}
+
+.delay-time4 {
+    animation-delay: 0.4s;
 }
