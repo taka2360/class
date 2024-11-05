@@ -84,6 +84,13 @@ $(function () {
             $("#backgrounds").css()
         }
 
+        if (scrollPos > window_height * 4.5) {
+            $("#links h1").addClass("fadein")
+            $("#accounts h2").addClass("fadein delay-time1")
+            $("#accounts a").addClass("fadein delay-time2")
+            $("#project-links h2").addClass("fadein delay-time3")
+            $("#project-links a").addClass("fadein delay-time4")
+        }
 
     });
 });

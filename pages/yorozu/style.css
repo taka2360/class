@@ -1,16 +1,17 @@
-@font-face {
-    font-family: "SF_Pro";
-    src:
-        url(".\font\SF-Pro.ttf") format("otf")
+html {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: black;
-    font-family: "SF_Pro";
+    font-family: "Meiryo", "San Francisco",system-ui;
     color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
 
 #topmenu {
     width: 100%;
