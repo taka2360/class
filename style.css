@@ -350,7 +350,7 @@ body {
 
 #links{
     position: absolute;
-    left: 50vw;
+    left: 0vw;
     transform: translate(-50%);
     top: 500vh;
     width:100vw;
