@@ -72,7 +72,7 @@ $(function () {
             $("#impressions h2:first-of-type").addClass("fadein")
             $("#impressions h3:first-of-type").addClass("fadein delay-time2")
         }
-        if (scrollPos > window_height * 3.2) {
+        if (scrollPos > window_height * 3.5) {
             $("#impressions h2:last-of-type").addClass("fadein")
             $("#impressions h3:last-of-type").addClass("fadein delay-time2")
         }
